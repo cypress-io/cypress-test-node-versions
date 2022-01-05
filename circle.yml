@@ -155,4 +155,5 @@ workflows:
             - node-12-npm-ci
             - node-12
             - node-14
+            - node-17
             - chrome-browser-77
