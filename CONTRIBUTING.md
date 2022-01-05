@@ -13,7 +13,7 @@ Thanks for taking the time to contribute! :smile:
 
 All contributors are expecting to abide by our [Code of Conduct](https://github.com/cypress-io/cypress/wiki/code-of-conduct).
 
-## Commiting Code
+## Committing Code
 
 ### Pull Requests
 
