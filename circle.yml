@@ -17,6 +17,7 @@ commands:
       - run: $(npm bin)/run-if $(npm bin)/cypress info
       - run: $(npm bin)/run-if $(npm bin)/cypress cache list
       - run: $(npm bin)/run-if $(npm bin)/cypress cache list --size
+      - run: $(npm bin)/run-if $(npm bin)/cypress run 
 
   send-status:
     description: Send failed status right away
@@ -55,9 +56,13 @@ jobs:
       - run: time npm ci
       - install-commit-install
       - run: npm t
-      - run: $(npm bin)/commit-message-install --else "npm i cypress"
+      - run: $(npm bin)/commit-message-install --else "npm install cypress"
       - run: $(npm bin)/run-if $(npm bin)/cypress version
       - run: DEBUG=cypress:cli $(npm bin)/run-if $(npm bin)/cypress verify
+      - run: $(npm bin)/run-if $(npm bin)/cypress info
+      - run: $(npm bin)/run-if $(npm bin)/cypress cache list
+      - run: $(npm bin)/run-if $(npm bin)/cypress cache list --size
+      - run: $(npm bin)/run-if $(npm bin)/cypress run 
       - send-status
 
   node-12:
