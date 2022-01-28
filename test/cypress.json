@@ -1,0 +1,6 @@
+{
+    "integrationFolder": "10.0-release/cypress/e2e",
+    "pluginsFile": false,
+    "supportFile": false,
+    "video": false
+}
