@@ -1,8 +1,7 @@
 module.exports = {
+  video: false,
   e2e: {
-    integrationFolder: "cypress/e2e",
-    pluginsFile: false,
+    setupNodeEvents(on, config) {},
     supportFile: false,
   },
-  video: false,
 }
